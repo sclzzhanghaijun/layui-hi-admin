@@ -2,15 +2,23 @@ body {
     background-color: #F5F5F5;
 }
 
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+
 .login-layout {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     width: 100%;
-    padding: 110px 0;
+    padding: 270px 0;
     min-height: 100%;
     box-sizing: border-box;
+    z-index: 9999;
 }
 
 .login-main {
@@ -21,13 +29,13 @@ body {
 
 .login-header {
     text-align: center;
+    color: #ffffff;
 }
 
 .login-header h2 {
     margin-bottom: 10px;
     font-weight: 300;
     font-size: 30px;
-    color: #000
 }
 
 .layui-icon-login {
@@ -49,6 +57,5 @@ body {
     line-height: 45px;
     text-align: center;
     box-sizing: border-box;
-    color: rgba(0, 0, 0, .5);
-    background: #F9F9F9;
+    color: rgba(255, 255, 255, .5);
 }
