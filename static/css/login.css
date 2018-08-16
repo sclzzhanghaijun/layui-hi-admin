@@ -1,0 +1,54 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.login-layout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 110px 0;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.login-main {
+    width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.login-header h2 {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000
+}
+
+.layui-icon-login {
+    position: relative;
+    left: 10px;
+    top: 27px;
+    color: #d2d2d2
+}
+
+.layui-form-item .layui-input {
+    padding-left: 30px
+}
+
+.login-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .5);
+    background: #F9F9F9;
+}
