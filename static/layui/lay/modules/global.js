@@ -32,7 +32,7 @@ layui.define(['element', 'util', 'element'], function () {
                 var id = parseInt($(this).parent("li").attr('lay-id'));
                 menu_list.splice($.inArray(id, menu_list), 1);
                 element.tabDelete("main-tab-list", id);
-            }), element.tabChange("main-tab-list", r.length - 1);
+            }), element.tabChange("main-tab-list", id);
 
         }
         , tabDelete: function (othis) {
