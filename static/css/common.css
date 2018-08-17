@@ -7,7 +7,8 @@ h1, h2, h3 {
 }
 
 .site-logo {
-    float: left;
+    position: absolute;
+    left: 0px;
     width: 230px;
     text-align: center;
     height: 60px;
@@ -90,6 +91,10 @@ h1, h2, h3 {
     border-bottom-width: 0px;
 }
 
+.layui-tab-title li:hover {
+    background-color: #ffffff;
+}
+
 .layui-body {
     left: 230px;
 }
@@ -111,6 +116,7 @@ h1, h2, h3 {
     height: 37px;
     line-height: 37px;
     font-size: 13px;
+    width: 100%;
 }
 
 .layui-layout-admin .layui-footer {
@@ -121,6 +127,31 @@ h1, h2, h3 {
     border-radius: 18px;
 }
 
-.layui-tab-title li:first-child .layui-tab-close{
+.layui-tab-title li:first-child .layui-tab-close {
     display: none;
+}
+
+.layui-mobile-sm .layui-header .layui-layout-left, .layui-mobile-sm .layui-side, .layui-mobile-sm .layui-footer {
+    transform: translate3d(-230px, 0, 0);
+    -webkit-transform: translate3d(-230px, 0, 0);
+}
+
+.layui-mobile-sm .site-logo {
+    transform: translate3d(-230px, 0, 0);
+}
+
+.layui-mobile-sm .layui-body {
+    transform: translate3d(-230px, 0, 0);
+    -webkit-transform: translate3d(-230px, 0, 0);
+    width: 100%;
+}
+
+.layui-mobile-spread-sm {
+    overflow: hidden;
+}
+
+.layui-mobile-spread-sm .layui-side {
+    left: 0;
+    transform: translate3d(0px, 0, 0);
+    -webkit-transform: translate3d(0px, 0, 0);
 }

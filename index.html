@@ -22,12 +22,17 @@
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header header layui-clear">
         <div class="site-logo">
-            <a href="./">XXX后台管理系统</a>
+            <a href="./" class="layui-show-md">HI Admin后台管理系统</a>
         </div>
         <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item left-flexible">
+                <a href="javascript:;" title="伸缩" style="color: #FFFFFF;">
+                    <i class="layui-icon layui-icon-shrink-right"></i>
+                </a>
+            </li>
         </ul>
         <ul class="layui-nav layui-layout-right">
-            <li class="layui-nav-item layui-hide-xs">
+            <li class="layui-nav-item">
                 <a href="http://www.hi917.com" target="_blank" title="前台">
                     <i class="layui-icon layui-icon-website"></i>
                 </a>
@@ -53,7 +58,6 @@
     </div>
     <div class="layui-side layui-bg-black layui-side-menu">
         <div class="layui-side-scroll">
-
             <ul class="layui-nav layui-nav-tree">
                 <li class="layui-nav-item layui-this">
                     <a href="javascript:;" class="site-menu-active" lay-href="./page/main.html"
@@ -120,7 +124,7 @@
     </div>
     <div class="layui-footer footer site-footer">
         <div class="layui-main">
-            <p>&copy; 2018 <a href="/">hi917.com</a> 小海</p>
+            <p>&copy; 2018 <a href="http://www.hi917.com">hi917.com</a> 小海</p>
         </div>
     </div>
     <div class="site-tree-mobile layui-hide">
@@ -128,11 +132,12 @@
     </div>
     <div class="site-mobile-shade"></div>
     <script src="./static/layui/layui.js" charset="utf-8"></script>
+    <script src="./static/js/common.js" charset="utf-8"></script>
     <script>
         layui.config({
             base: 'static/layui/lay/modules/'
             , version: '1531663423583'
-        }).use('global');
+        });
     </script>
 </div>
 </body>
